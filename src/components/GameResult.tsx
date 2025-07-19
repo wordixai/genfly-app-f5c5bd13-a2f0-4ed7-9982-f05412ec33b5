@@ -51,7 +51,6 @@ export const GameResult = ({
       <Card className="bg-white/95 backdrop-blur-lg border-0 shadow-2xl rounded-3xl overflow-hidden">
         <CardContent className="p-8">
           <div className="text-center">
-            {/* Battle Arena */}
             <div className="flex justify-between items-center mb-8 relative">
               <div className="text-center">
                 <div className="text-sm font-medium text-gray-500 mb-3 uppercase tracking-wide">你的选择</div>
@@ -63,7 +62,7 @@ export const GameResult = ({
                   <span className="text-4xl filter drop-shadow-lg">
                     {getChoiceEmoji(playerChoice)}
                   </span>
-                </div>
+                </motion.div>
               </div>
               
               <motion.div 
@@ -85,11 +84,10 @@ export const GameResult = ({
                   <span className="text-4xl filter drop-shadow-lg">
                     {getChoiceEmoji(computerChoice)}
                   </span>
-                </div>
+                </motion.div>
               </div>
             </div>
 
-            {/* Result */}
             <motion.div
               initial={{ y: 20, opacity: 0 }}
               animate={{ y: 0, opacity: 1 }}
